@@ -1,4 +1,8 @@
-/**/
+/*
+  생성자는 상속되지 않는다.
+  상속관계에서 자손클래스에서 부모클래스의 생성자를 호출하려면 super(); 로 호풀하면 부모의 기본생성자를 호출한다. 
+  항상 부모의 생성자를 호출할 때는 생성자 {} 블록내에서 첫줄에서 사용해야함.
+ */
 
 class Parent13 extends Object{
 	protected int x;
@@ -20,7 +24,7 @@ class Child13 extends Parent13{
 		
 	}
 	public Child13(int x, int y, int z) {
-		super(x,y);  // 부모클래스의 오버로딩 된 생성자 호출
+		super(x,y);  // 부모클래스의 오버로딩 된 생성자 호출, 항상 첫줄에 먼저 사용해야함.
 		this.z = z; 
 	}// 전달인자 개수가 다른 생성자 오버로딩
 	
