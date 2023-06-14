@@ -6,7 +6,6 @@
 class Parent12{
 	int a = 10;
 	int b = 20;
-	
 }
 
 class Child12 extends Parent12{
